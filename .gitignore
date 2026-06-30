@@ -1,0 +1,8 @@
+# OS / エディタ
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# 作業用の生スクリーンショット・元画像（HTMLからは未参照。tech_*.png にコピー済み）
+images/スクリーンショット*.png
+images/ChatGPT Image*.png

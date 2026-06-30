@@ -1,0 +1,4 @@
+# Netlify 設定 — ビルド不要の静的サイト。フォルダ全体をそのまま公開する。
+[build]
+  publish = "."
+  command = ""

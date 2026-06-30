@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会社情報｜DENBA+ リカバリーバランスウェア｜公式オンラインストア</title>
+<meta name="description" content="DENBAスタイル株式会社の会社情報。「アパレルを科学する。」着るだけで日々のリカバリーをサポートする新素材アパレルメーカー。">
+<style>
+  :root {
+    --black: #000000;
+    --black-soft: #0A0A0A;
+    --gray-deep: #1A1A1A;
+    --gray-dark: #2C2C2C;
+    --gray-mid: #4A4A4A;
+    --gray: #6B6B6B;
+    --gray-light: #888888;
+    --gray-pale: #B8B8B8;
+    --gray-mist: #D5D5D5;
+    --gray-soft: #E5E5E5;
+    --bg-soft: #F5F5F5;
+    --white-soft: #FAFAFA;
+    --white: #FFFFFF;
+    --gold: #888888;
+    --gold-light: #B8B8B8;
+    --dark: #1A1A1A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Yu Gothic", "游ゴシック", "Hiragino Sans", sans-serif;
+    color: var(--dark);
+    background: var(--white);
+    line-height: 1.8;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .container-narrow { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  /* ========== HEADER ========== */
+  header.site-header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(0,0,0,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .header-inner {
+    display: flex; justify-content: space-between; align-items: center;
+    height: 64px; padding: 0 24px; max-width: 1200px; margin: 0 auto;
+  }
+  .logo {
+    font-family: "Helvetica Neue", sans-serif; font-weight: 700;
+    font-size: 22px; letter-spacing: -0.5px; color: var(--white);
+  }
+  .logo .denba { color: var(--white); }
+  .logo .ba { color: var(--white); }
+  .logo .plus { color: var(--gray-pale); }
+  .ec-nav { display: flex; align-items: center; gap: 32px; }
+  .ec-nav a {
+    font-size: 13px; letter-spacing: 1.5px; color: var(--white);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .ec-nav a:hover { color: var(--gray-pale); }
+  .ec-nav .cart-icon {
+    position: relative; display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px; background: var(--white); color: var(--black);
+    border: 1px solid var(--white); font-size: 12px; letter-spacing: 1px;
+    transition: all 0.2s;
+  }
+  .ec-nav .cart-icon:hover { background: transparent; color: var(--white); }
+  .ec-nav .cart-icon .count {
+    background: var(--black); color: var(--white); width: 20px; height: 20px;
+    border-radius: 50%; display: inline-flex; justify-content: center;
+    align-items: center; font-size: 11px; font-weight: 700;
+  }
+  .ec-nav .cart-icon:hover .count { background: var(--white); color: var(--black); }
+  @media (max-width: 768px) {
+    .ec-nav { gap: 16px; }
+    .ec-nav .nav-link { display: none; }
+  }
+
+  /* ========== STATEMENT HERO ========== */
+  .statement {
+    background: var(--black); color: var(--white);
+    padding: 120px 0 110px; text-align: center;
+  }
+  .statement .eyebrow {
+    font-family: "Helvetica Neue", sans-serif; font-size: 11px;
+    letter-spacing: 6px; color: var(--gray-pale); margin-bottom: 32px;
+  }
+  .statement h1 {
+    font-size: clamp(34px, 6vw, 58px); font-weight: 700;
+    letter-spacing: 6px; line-height: 1.4; margin-bottom: 28px;
+  }
+  .statement .lead {
+    font-size: 16px; color: var(--gray-mist); line-height: 2.2;
+    max-width: 640px; margin: 0 auto; letter-spacing: 1px;
+  }
+
+  /* ========== ABOUT BODY ========== */
+  .about-body { background: var(--white); padding: 100px 0; }
+  .about-body .lead-large {
+    font-size: clamp(20px, 3vw, 26px); font-weight: 700;
+    color: var(--black); letter-spacing: 2px; line-height: 1.9;
+    text-align: center; margin-bottom: 48px;
+  }
+  .about-body p {
+    font-size: 16px; color: var(--gray-dark); line-height: 2.2;
+    margin-bottom: 28px; letter-spacing: 0.5px;
+  }
+  .about-body p .hl {
+    color: var(--black); font-weight: 700;
+    border-bottom: 2px solid var(--black); padding-bottom: 2px;
+  }
+  .about-body .closing {
+    font-size: 18px; color: var(--black); font-weight: 600;
+    letter-spacing: 1px; text-align: center; margin-top: 56px;
+    padding-top: 40px; border-top: 1px solid var(--gray-soft);
+  }
+
+  /* ========== COMPANY PROFILE TABLE ========== */
+  .profile-section { background: var(--bg-soft); padding: 100px 0; }
+  .profile-section .sec-eyebrow {
+    text-align: center; font-family: "Helvetica Neue", sans-serif;
+    font-size: 11px; letter-spacing: 6px; color: var(--gray); margin-bottom: 10px;
+  }
+  .profile-section .sec-title {
+    text-align: center; font-size: 26px; font-weight: 700;
+    color: var(--black); letter-spacing: 4px; margin-bottom: 48px;
+  }
+  .profile-table {
+    width: 100%; max-width: 820px; margin: 0 auto;
+    border-collapse: collapse; background: var(--white);
+    border: 1px solid var(--gray-soft);
+  }
+  .profile-table th, .profile-table td {
+    text-align: left; padding: 20px 24px;
+    border-bottom: 1px solid var(--gray-soft); font-size: 14px;
+    vertical-align: top;
+  }
+  .profile-table tr:last-child th, .profile-table tr:last-child td { border-bottom: none; }
+  .profile-table th {
+    width: 200px; color: var(--black); font-weight: 700;
+    letter-spacing: 2px; background: var(--white-soft);
+  }
+  .profile-table td { color: var(--gray-dark); line-height: 1.9; }
+  .profile-note {
+    max-width: 820px; margin: 20px auto 0; font-size: 11px;
+    color: var(--gray); line-height: 1.8; letter-spacing: 0.5px;
+  }
+  @media (max-width: 640px) {
+    .profile-table th, .profile-table td { display: block; width: 100%; }
+    .profile-table th { border-bottom: none; padding-bottom: 4px; }
+    .profile-table td { padding-top: 4px; }
+  }
+
+  /* ========== FOOTER ========== */
+  footer.site-footer {
+    background: var(--dark); color: rgba(255,255,255,0.7);
+    padding: 60px 0 32px; font-size: 12px; line-height: 1.9;
+  }
+  footer h5 {
+    color: var(--gold-light); font-size: 11px; letter-spacing: 3px;
+    margin-bottom: 12px; font-weight: 600;
+  }
+  footer .footer-note-box {
+    background: rgba(255,255,255,0.04); border-left: 3px solid var(--gold);
+    padding: 24px; margin-bottom: 24px; border-radius: 4px;
+  }
+  footer .footer-note-box p { margin-bottom: 8px; font-size: 11.5px; }
+  footer .copyright {
+    margin-top: 32px; padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1); text-align: center;
+    color: rgba(255,255,255,0.4); font-size: 11px; letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="denba">DEN</span><span class="ba">BA</span><span class="plus">+</span>
+    </div>
+    <nav class="ec-nav">
+      <a href="DENBA_ECサイト_v1.html" class="nav-link">TOP</a>
+      <a href="DENBA_ECサイト_products.html" class="nav-link">商品</a>
+      <a href="technology.html" class="nav-link">技術</a>
+      <a href="DENBA_ECサイト_v1.html#reviews" class="nav-link">レビュー</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="company.html" class="nav-link" style="opacity:1;border-bottom:2px solid var(--white);padding-bottom:4px;">会社情報</a>
+      <a href="#cart" class="cart-icon">
+        🛒 CART
+        <span class="count">0</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== STATEMENT HERO ========== -->
+<section class="statement">
+  <div class="container">
+    <div class="eyebrow">ABOUT US ── DENBAスタイル株式会社</div>
+    <h1>アパレルを科学する。</h1>
+    <p class="lead">
+      着ることが、毎日のリカバリーになる。<br>
+      DENBAスタイルは、技術とものづくりで“ウェアの常識”を更新します。
+    </p>
+  </div>
+</section>
+
+<!-- ========== ABOUT BODY ========== -->
+<section class="about-body">
+  <div class="container-narrow">
+    <p class="lead-large">
+      私たちは、着るだけで日々のリカバリーをサポートするウェアを<br>
+      開発・提供する、新素材アパレルメーカーです。
+    </p>
+
+    <p>
+      これまで「着心地」や「デザイン」で語られてきたアパレルに、私たちは<span class="hl">“科学”という新しい価値</span>を加えます。先端技術と確かなものづくりを掛け合わせ、機能性とデザイン性を両立した「DENBA Recovery Balance Wear」を通じて、毎日のコンディショニングを支えます。
+    </p>
+
+    <p>
+      素材・設計・技術——そのすべてに根拠を持ち、感覚ではなくサイエンスでウェアをつくる。DENBAスタイルは、アパレルの新しいスタンダードを提案し続けます。
+    </p>
+
+    <div class="closing">
+      着るリカバリーを、あたりまえに。
+    </div>
+  </div>
+</section>
+
+<!-- ========== COMPANY PROFILE ========== -->
+<section class="profile-section">
+  <div class="container">
+    <div class="sec-eyebrow">COMPANY PROFILE</div>
+    <h2 class="sec-title">会社概要</h2>
+
+    <table class="profile-table">
+      <tr>
+        <th>会社名</th>
+        <td>DENBAスタイル株式会社</td>
+      </tr>
+      <tr>
+        <th>事業内容</th>
+        <td>リカバリーウェア・バランスウェアの販売事業<br>DENBAブランド各製品の販売事業／アパレル卸売事業／ブランドプロダクト事業</td>
+      </tr>
+      <tr>
+        <th>コンセプト</th>
+        <td>アパレルを科学する。</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>〒104-0044　東京都中央区明石町4-5</td>
+      </tr>
+      <tr>
+        <th>設立</th>
+        <td>2026年6月</td>
+      </tr>
+      <tr>
+        <th>代表者</th>
+        <td>代表取締役　今村 龍男</td>
+      </tr>
+      <tr>
+        <th>資本金</th>
+        <td>5,000万円</td>
+      </tr>
+      <tr>
+        <th>お問い合わせ</th>
+        <td>info@denba-style.jp</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="container-narrow">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding:40px 0;border-bottom:1px solid rgba(255,255,255,0.1);">
+      <div>
+        <h5 style="font-size:13px;color:white;letter-spacing:2px;margin-bottom:16px;">SHOP</h5>
+        <ul style="list-style:none;padding:0;font-size:13px;line-height:2.2;">
+          <li><a href="DENBA_ECサイト_products.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">商品一覧</a></li>
+          <li><a href="faq.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">よくあるご質問</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 style="font-size:13px;color:white;letter-spacing:2px;margin-bottom:16px;">ABOUT</h5>
+        <ul style="list-style:none;padding:0;font-size:13px;line-height:2.2;">
+          <li><a href="technology.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">技術について</a></li>
+          <li><a href="company.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">会社情報</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 style="font-size:13px;color:white;letter-spacing:2px;margin-bottom:16px;">SUPPORT</h5>
+        <ul style="list-style:none;padding:0;font-size:13px;line-height:2.2;">
+          <li><a href="#" style="color:rgba(255,255,255,0.7);text-decoration:none;">お問い合わせ</a></li>
+          <li><a href="return.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">返品・交換</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 style="font-size:13px;color:white;letter-spacing:2px;margin-bottom:16px;">COMPANY</h5>
+        <ul style="list-style:none;padding:0;font-size:13px;line-height:2.2;">
+          <li><a href="company.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">会社概要</a></li>
+          <li><a href="tokushoho.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">特定商取引法</a></li>
+          <li><a href="privacy.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-note-box" style="margin-top:32px;">
+      <h5>■ 商標について</h5>
+      <p>Thermalux™（サーマラックス）、Balancetech™（バランステック）、DENBA+ / Recovery Balance Wear は、いずれも商標出願中です。</p>
+    </div>
+
+    <div class="copyright">
+      © 2026 DENBAスタイル株式会社 — DENBA+ RECOVERY BALANCE WEAR
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
