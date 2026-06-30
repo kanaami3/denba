@@ -1392,8 +1392,8 @@
   }
   .product-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 56px;
     align-items: start;
   }
   /* Image gallery — Uniqlo風 大画像2列グリッド */
@@ -1417,6 +1417,53 @@
     position: sticky;
     top: 100px;
   }
+  /* Product detail accordion (プルダウン) */
+  .product-accordion {
+    margin-top: 28px;
+    border-top: 1px solid #E5E7EB;
+  }
+  .product-accordion details {
+    border-bottom: 1px solid #E5E7EB;
+  }
+  .product-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 34px 18px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black);
+    position: relative;
+  }
+  .product-accordion summary::-webkit-details-marker { display: none; }
+  .product-accordion summary::after {
+    content: '+';
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    font-weight: 300;
+    color: #999;
+    transition: opacity 0.2s;
+  }
+  .product-accordion details[open] summary::after { content: '−'; }
+  .product-accordion .acc-body {
+    padding: 0 2px 22px;
+    font-size: 13.5px;
+    line-height: 1.95;
+    color: #555;
+  }
+  .product-accordion .acc-body dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 7px 18px;
+  }
+  .product-accordion .acc-body dt { color: #999; white-space: nowrap; }
+  .product-accordion .acc-body dd { margin: 0; color: var(--black); }
+  .product-accordion .acc-body ul { margin: 0; padding-left: 1.2em; }
+  .product-accordion .acc-body li { margin-bottom: 4px; }
+  .product-accordion .acc-note { color: #b08400; font-size: 12px; }
   .product-info .badges {
     display: flex;
     gap: 8px;
@@ -2408,6 +2455,54 @@
             <span class="icon">✓</span>
             <span>クレジットカード・代引き・後払い・Apple Pay 対応</span>
           </div>
+        </div>
+
+        <!-- Product detail accordion (プルダウン) -->
+        <div class="product-accordion">
+          <details>
+            <summary>仕様</summary>
+            <div class="acc-body">
+              <dl>
+                <dt>ライン</dt><dd>STANDARD LINE</dd>
+                <dt>搭載技術</dt><dd>Balancetech™（特殊鉱石配合素材）</dd>
+                <dt>カラー</dt><dd>ブラック ／ ホワイト</dd>
+                <dt>サイズ</dt><dd>XS・S・M・L・XL（ユニセックス）</dd>
+                <dt>シルエット</dt><dd>クルーネック ／ リラックスフィット ／ 半袖</dd>
+              </dl>
+            </div>
+          </details>
+          <details>
+            <summary>素材・お手入れ</summary>
+            <div class="acc-body">
+              <ul>
+                <li>素材構成：綿混素材（コットンタッチの肌当たり）<span class="acc-note">※実際の混率に差し替え予定</span></li>
+                <li>洗濯機洗い可（洗濯ネットのご使用を推奨）</li>
+                <li>漂白剤不可 ／ タンブラー乾燥不可</li>
+                <li>アイロンは当て布の上から中温で</li>
+                <li>Balancetech™ の機能は洗濯によって大きく低下しません</li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary>配送・交換・返品について</summary>
+            <div class="acc-body">
+              <ul>
+                <li>全国送料無料（北海道・沖縄・離島を含む）</li>
+                <li>ご注文から3〜5営業日以内に発送</li>
+                <li>未開封・未使用に限り、商品到着後8日以内の返品・交換が可能</li>
+                <li>お支払い：クレジットカード ／ 代引き ／ 後払い ／ Apple Pay</li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary>生産情報</summary>
+            <div class="acc-body">
+              <dl>
+                <dt>企画</dt><dd>DENBAスタイル株式会社（日本）</dd>
+                <dt>製造国</dt><dd>確認中<span class="acc-note">※確定値に差し替え予定</span></dd>
+              </dl>
+            </div>
+          </details>
         </div>
       </div>
     </div>
