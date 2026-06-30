@@ -1524,6 +1524,36 @@
     font-weight: 600;
   }
 
+  /* 技術図を説明文の横に配置（PC: 2カラム / モバイル: 縦積み） */
+  .tech-lead-row {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    margin: 48px auto 80px;
+  }
+  .tech-lead-row .official-copy-emphasized {
+    flex: 1 1 50%;
+    margin: 0;
+    max-width: none;
+  }
+  .tech-lead-row .tech-infographic {
+    flex: 1 1 50%;
+    margin: 0;
+    max-width: 520px;
+  }
+  @media (max-width: 900px) {
+    .tech-lead-row {
+      flex-direction: column;
+      gap: 32px;
+    }
+    .tech-lead-row .official-copy-emphasized,
+    .tech-lead-row .tech-infographic {
+      flex: 1 1 auto;
+      width: 100%;
+      max-width: 880px;
+    }
+  }
+
   /* 技術CG動画 */
   .tech-video {
     margin: 0 auto 80px;
@@ -2451,6 +2481,7 @@
     <div class="tech-big-title">Thermalux<span class="tm">™</span></div>
     <div class="tech-big-sub">サーマラックス</div>
 
+    <div class="tech-lead-row">
     <div class="official-copy-emphasized">
       <div class="quote-mark">"</div>
       <p class="lead-line">
@@ -2473,6 +2504,7 @@
       <img src="images/tech_thermalux.png" alt="Thermalux™ 技術図 — 遠赤外線輻射・グラフェン素材" />
       <div class="caption">— Thermalux™ Technology Overview —</div>
     </div>
+    </div><!-- /tech-lead-row -->
 
     <!-- Process -->
     <div class="process-block">
@@ -2612,6 +2644,7 @@
     <div class="tech-big-title">Balancetech<span class="tm">™</span></div>
     <div class="tech-big-sub">バランステック</div>
 
+    <div class="tech-lead-row">
     <div class="official-copy-emphasized">
       <div class="quote-mark">"</div>
       <p class="lead-line">
@@ -2633,6 +2666,7 @@
       <img src="images/tech_balancetech_ja.png" alt="Balancetech™ 技術図 — 技術：身体の軸をサポート／材料：特殊鉱石／効果：バランスケア" />
       <div class="caption">— Balancetech™ Technology Overview —</div>
     </div>
+    </div><!-- /tech-lead-row -->
 
     <!-- CG Movie -->
     <div class="tech-video">
