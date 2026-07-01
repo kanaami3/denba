@@ -1390,11 +1390,11 @@
     background: var(--white);
     padding: 100px 0;
   }
-  .product-buy .container { max-width: 1500px; }
+  .product-buy .container { max-width: 1240px; }
   .product-layout {
     display: grid;
-    grid-template-columns: 3.5fr 1fr;
-    gap: 40px;
+    grid-template-columns: 2fr 1fr;
+    gap: 56px;
     align-items: start;
   }
   /* Image gallery — Uniqlo風 大画像2列グリッド */
@@ -1406,10 +1406,12 @@
   .product-gallery .gallery-cell {
     background: var(--bg-soft);
     overflow: hidden;
+    aspect-ratio: 1 / 1;
   }
   .product-gallery .gallery-cell img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
   }
   /* Product info — スクロール追従 */
@@ -1632,6 +1634,7 @@
   }
   @media (max-width: 900px) {
     .product-layout { grid-template-columns: 1fr; gap: 40px; }
+    #technology > div > div { grid-template-columns: 1fr !important; gap: 24px !important; }
     .product-info { position: static; top: auto; }
     .product-info h1 { font-size: 24px; }
     .product-info .price { font-size: 28px; }
@@ -2362,8 +2365,7 @@
         <div class="gallery-grid">
           <div class="gallery-cell"><img src="images/model_duo_men.png" alt="メンズ着用" /></div>
           <div class="gallery-cell"><img src="images/model_duo_women.png" alt="ウィメンズ着用" /></div>
-          <div class="gallery-cell"><img src="images/tech_thermalux.png" alt="Thermalux™ 技術図" /></div>
-          <div class="gallery-cell"><img src="images/tech_axiscore.png" alt="Balancetech™ 技術図" /></div>
+          <div class="gallery-cell"><img src="images/pajama_top_black.png" alt="トップス（上）単品 ブラック" /></div>
         </div>
       </div>
 
@@ -2452,6 +2454,54 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- ========== TECHNOLOGY ========== -->
+<section id="technology" style="scroll-margin-top:90px;background:#faf9f7;padding:72px 0;border-top:1px solid #ececec;">
+  <div style="max-width:1000px;margin:0 auto;padding:0 24px;">
+    <p style="font-size:11px;letter-spacing:.22em;color:#9a7b34;margin:0 0 6px;text-align:center;">TECHNOLOGY</p>
+    <h2 style="font-size:26px;margin:0 0 6px;text-align:center;color:#1a1a1a;">2つの素材技術</h2>
+    <p style="font-size:13.5px;color:#666;text-align:center;margin:0 0 44px;line-height:1.9;">
+      DENBAの30年以上にわたる素材研究から生まれた、独自の技術。<br>着るだけで、就寝時の身体をやさしくサポートします。
+    </p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;">
+      <!-- Thermalux -->
+      <div style="background:#fff;border:1px solid #ececec;border-radius:8px;overflow:hidden;">
+        <div style="background:#f2f0ec;aspect-ratio:4/3;overflow:hidden;">
+          <img src="images/tech_thermalux.png" alt="Thermalux™ 技術図（グラフェン×遠赤外線）" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div style="padding:26px 24px 28px;">
+          <p style="font-size:10.5px;letter-spacing:.2em;color:#9a7b34;margin:0 0 8px;">TECHNOLOGY 01</p>
+          <h3 style="font-size:19px;margin:0 0 4px;color:#1a1a1a;">Thermalux<span class="tm">™</span></h3>
+          <p style="font-size:12.5px;color:#9a7b34;margin:0 0 14px;font-weight:600;letter-spacing:.04em;">グラフェン × 遠赤外線</p>
+          <p style="font-size:13.5px;color:#555;margin:0;line-height:1.95;">
+            グラフェンを練り込んだ素材が、体温を熱源とした遠赤外線を輻射。外部電源に頼らず、着る人自身の体温を活かして、芯から包まれるような温もりの体感をお届けします。
+          </p>
+        </div>
+      </div>
+
+      <!-- Balancetech -->
+      <div style="background:#fff;border:1px solid #ececec;border-radius:8px;overflow:hidden;">
+        <div style="background:#f2f0ec;aspect-ratio:4/3;overflow:hidden;">
+          <img src="images/tech_balancetech_ja.png" alt="Balancetech™ 技術図（特殊鉱石×軸サポート）" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div style="padding:26px 24px 28px;">
+          <p style="font-size:10.5px;letter-spacing:.2em;color:#9a7b34;margin:0 0 8px;">TECHNOLOGY 02</p>
+          <h3 style="font-size:19px;margin:0 0 4px;color:#1a1a1a;">Balancetech<span class="tm">™</span></h3>
+          <p style="font-size:12.5px;color:#9a7b34;margin:0 0 14px;font-weight:600;letter-spacing:.04em;">特殊鉱石 × 軸サポート</p>
+          <p style="font-size:13.5px;color:#555;margin:0;line-height:1.95;">
+            DENBA独自配合の特殊鉱石を活用した素材技術。着用時の身体軸への気づきを、自然にサポートします。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:11.5px;color:#999;text-align:center;margin:32px 0 0;line-height:1.9;">
+      ※ Thermalux<span class="tm">™</span>／Balancetech<span class="tm">™</span> は商標出願中です。体感には個人差があります。
+    </p>
   </div>
 </section>
 
