@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>リカバリーバランスパジャマ 上下セット｜Medical Line｜DENBA+ 公式オンラインストア</title>
-<meta name="description" content="リカバリーバランスパジャマ 上下セット ¥24,200（税込）。一般医療機器届出商品。Thermalux™ × Balancetech™ 両技術搭載。">
+<title>リカバリーバランスパジャマ｜Medical Line｜DENBA+ 公式オンラインストア</title>
+<meta name="description" content="リカバリーバランスパジャマ。上下セット ¥24,200（税込）、トップス・ボトムスの単品販売にも対応。一般医療機器届出商品。Thermalux™ × Balancetech™ 両技術搭載。">
 <style>
   :root {
     /* Monochrome Tech Palette */
@@ -1566,6 +1566,37 @@
     cursor: not-allowed;
     background: var(--bg-soft);
   }
+  /* Purchase type (set / single) */
+  .type-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+  .type-options .type-chip {
+    padding: 12px 6px;
+    text-align: center;
+    border: 1px solid #D5D9E0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: all 0.2s;
+    background: white;
+  }
+  .type-options .type-chip:hover { border-color: var(--navy); }
+  .type-options .type-chip.active {
+    background: var(--navy);
+    color: white;
+    border-color: var(--navy);
+  }
+  .type-options .type-chip .type-price {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 4px;
+    opacity: 0.85;
+  }
   /* Buy buttons */
   .buy-buttons { margin-top: 32px; }
   .btn-add-cart {
@@ -2365,19 +2396,31 @@
           <span class="badge-pill tech">Thermalux™ × Balancetech™</span>
         </div>
 
-        <h1>リカバリーバランスパジャマ<br>上下セット</h1>
+        <h1>リカバリーバランスパジャマ</h1>
         <div class="ja-sub">DENBA+ RECOVERY BALANCE PAJAMA</div>
 
         <div class="price-row">
-          <span class="price">¥24,200</span>
-          <span class="price-note">税込（送料無料）</span>
+          <span class="price" id="priceValue">¥24,200</span>
+          <span class="price-note" id="priceNote">税込（送料無料）</span>
           <span class="free-ship">FREE SHIPPING</span>
         </div>
 
         <p class="desc">
           DENBA独自の2技術「Thermalux<span class="tm">™</span>」「Balancetech<span class="tm">™</span>」を融合した、業界でも数少ない一般医療機器届出のリカバリーパジャマ。<br>
-          一日の終わりに、芯から温もる体感を。
+          上下セットのほか、トップス（上）・ボトムス（下）の単品でもお選びいただけます。
         </p>
+
+        <!-- Purchase type selector (set / single) -->
+        <div class="selector-group">
+          <div class="label">
+            <span>購入タイプ：<strong id="typeLabel" style="color:var(--black);">上下セット</strong></span>
+          </div>
+          <div class="type-options">
+            <div class="type-chip active" onclick="changeType(this, '上下セット', '¥24,200', '税込（送料無料）')">上下セット<span class="type-price">¥24,200</span></div>
+            <div class="type-chip" onclick="changeType(this, 'トップス（上）単品', '価格準備中', '税込／価格は準備中')">トップス（上）<span class="type-price">準備中</span></div>
+            <div class="type-chip" onclick="changeType(this, 'ボトムス（下）単品', '価格準備中', '税込／価格は準備中')">ボトムス（下）<span class="type-price">準備中</span></div>
+          </div>
+        </div>
 
         <!-- Color selector -->
         <div class="selector-group">
@@ -2440,7 +2483,7 @@
   <div style="max-width:880px;margin:0 auto;padding:0 24px;">
     <p style="font-size:11px;letter-spacing:.22em;color:#9a7b34;margin:0 0 6px;text-align:center;">SIZE GUIDE</p>
     <h2 style="font-size:26px;margin:0 0 4px;text-align:center;color:#1a1a1a;">サイズガイド</h2>
-    <p style="font-size:13px;color:#666;text-align:center;margin:0 0 32px;">リカバリーバランスパジャマ 上下セット</p>
+    <p style="font-size:13px;color:#666;text-align:center;margin:0 0 32px;">リカバリーバランスパジャマ（上下セット／トップス・ボトムス単品）</p>
     <div style="text-align:center;margin:0 0 30px;"><p style="font-size:11px;letter-spacing:.2em;color:#9a7b34;margin:0 0 12px;">SIZE RANGE</p><p style="font-size:14px;color:#1a1a1a;margin:0 0 14px;font-weight:700;">サイズ展開：S ・ M ・ L ・ LL（全4サイズ／ユニセックス）</p><div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;"><span style="display:inline-flex;align-items:center;justify-content:center;min-width:46px;height:40px;padding:0 14px;border:1.5px solid #1a1a1a;border-radius:4px;font-size:14px;font-weight:700;color:#1a1a1a;background:#fff;letter-spacing:.04em;">S</span><span style="display:inline-flex;align-items:center;justify-content:center;min-width:46px;height:40px;padding:0 14px;border:1.5px solid #1a1a1a;border-radius:4px;font-size:14px;font-weight:700;color:#1a1a1a;background:#fff;letter-spacing:.04em;">M</span><span style="display:inline-flex;align-items:center;justify-content:center;min-width:46px;height:40px;padding:0 14px;border:1.5px solid #1a1a1a;border-radius:4px;font-size:14px;font-weight:700;color:#1a1a1a;background:#fff;letter-spacing:.04em;">L</span><span style="display:inline-flex;align-items:center;justify-content:center;min-width:46px;height:40px;padding:0 14px;border:1.5px solid #1a1a1a;border-radius:4px;font-size:14px;font-weight:700;color:#1a1a1a;background:#fff;letter-spacing:.04em;">LL</span></div><p style="font-size:12.5px;color:#666;margin:14px 0 0;">カラー展開：ブラック（BK）／グレー（GY）　＊一般医療機器（届出）ライン</p></div>
     <div style='margin:0 0 28px;'><h3 style='font-size:15px;margin:0 0 12px;color:#1a1a1a;letter-spacing:.04em;'>トップス（上）</h3><div style='overflow-x:auto;'><table style='width:100%;border-collapse:collapse;font-size:13px;min-width:420px;'><thead><tr><th style='padding:12px 14px;border-bottom:2px solid #1a1a1a;text-align:left;font-size:13px;'>部位 / サイズ</th><th style='padding:12px 10px;border-bottom:2px solid #1a1a1a;font-size:13px;font-weight:700;text-align:center;'>S</th><th style='padding:12px 10px;border-bottom:2px solid #1a1a1a;font-size:13px;font-weight:700;text-align:center;'>M</th><th style='padding:12px 10px;border-bottom:2px solid #1a1a1a;font-size:13px;font-weight:700;text-align:center;'>L</th><th style='padding:12px 10px;border-bottom:2px solid #1a1a1a;font-size:13px;font-weight:700;text-align:center;'>LL</th></tr></thead><tbody><tr><th style='padding:11px 14px;border-bottom:1px solid #e6e6e6;text-align:left;font-weight:600;font-size:13px;white-space:nowrap;background:#faf9f7;'>着丈</th><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td></tr><tr><th style='padding:11px 14px;border-bottom:1px solid #e6e6e6;text-align:left;font-weight:600;font-size:13px;white-space:nowrap;background:#faf9f7;'>身幅</th><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td></tr><tr><th style='padding:11px 14px;border-bottom:1px solid #e6e6e6;text-align:left;font-weight:600;font-size:13px;white-space:nowrap;background:#faf9f7;'>肩幅</th><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td></tr><tr><th style='padding:11px 14px;border-bottom:1px solid #e6e6e6;text-align:left;font-weight:600;font-size:13px;white-space:nowrap;background:#faf9f7;'>袖丈</th><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td></tr></tbody></table></div></div><div style='margin:0 0 28px;'><h3 style='font-size:15px;margin:0 0 12px;color:#1a1a1a;letter-spacing:.04em;'>ボトムス（下）</h3><div style='overflow-x:auto;'><table style='width:100%;border-collapse:collapse;font-size:13px;min-width:420px;'><thead><tr><th style='padding:12px 14px;border-bottom:2px solid #1a1a1a;text-align:left;font-size:13px;'>部位 / サイズ</th><th style='padding:12px 10px;border-bottom:2px solid #1a1a1a;font-size:13px;font-weight:700;text-align:center;'>S</th><th style='padding:12px 10px;border-bottom:2px solid #1a1a1a;font-size:13px;font-weight:700;text-align:center;'>M</th><th style='padding:12px 10px;border-bottom:2px solid #1a1a1a;font-size:13px;font-weight:700;text-align:center;'>L</th><th style='padding:12px 10px;border-bottom:2px solid #1a1a1a;font-size:13px;font-weight:700;text-align:center;'>LL</th></tr></thead><tbody><tr><th style='padding:11px 14px;border-bottom:1px solid #e6e6e6;text-align:left;font-weight:600;font-size:13px;white-space:nowrap;background:#faf9f7;'>ウエスト（平置き）</th><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td></tr><tr><th style='padding:11px 14px;border-bottom:1px solid #e6e6e6;text-align:left;font-weight:600;font-size:13px;white-space:nowrap;background:#faf9f7;'>股上</th><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td></tr><tr><th style='padding:11px 14px;border-bottom:1px solid #e6e6e6;text-align:left;font-weight:600;font-size:13px;white-space:nowrap;background:#faf9f7;'>股下</th><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td></tr><tr><th style='padding:11px 14px;border-bottom:1px solid #e6e6e6;text-align:left;font-weight:600;font-size:13px;white-space:nowrap;background:#faf9f7;'>わたり幅</th><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td></tr><tr><th style='padding:11px 14px;border-bottom:1px solid #e6e6e6;text-align:left;font-weight:600;font-size:13px;white-space:nowrap;background:#faf9f7;'>総丈</th><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td><td style='padding:11px 10px;border-bottom:1px solid #e6e6e6;text-align:center;color:#bbb;'>—</td></tr></tbody></table></div></div>
     <div style="background:#faf9f7;border:1px solid #ececec;border-radius:6px;padding:16px 20px;margin-top:8px;">
@@ -2542,6 +2585,19 @@
     var chips = document.querySelectorAll('.size-chip');
     chips.forEach(function(c) { c.classList.remove('active'); });
     chipEl.classList.add('active');
+  }
+
+  // 購入タイプ選択（上下セット／トップス単品／ボトムス単品）
+  function changeType(chipEl, typeName, priceText, noteText) {
+    var chips = document.querySelectorAll('.type-chip');
+    chips.forEach(function(c) { c.classList.remove('active'); });
+    chipEl.classList.add('active');
+    var label = document.getElementById('typeLabel');
+    if (label) label.textContent = typeName;
+    var price = document.getElementById('priceValue');
+    if (price) price.textContent = priceText;
+    var note = document.getElementById('priceNote');
+    if (note) note.textContent = noteText;
   }
 </script>
 
