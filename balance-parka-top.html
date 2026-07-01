@@ -1390,11 +1390,11 @@
     background: var(--white);
     padding: 100px 0;
   }
-  .product-buy .container { max-width: 1500px; }
+  .product-buy .container { max-width: 1240px; }
   .product-layout {
     display: grid;
-    grid-template-columns: 3.5fr 1fr;
-    gap: 40px;
+    grid-template-columns: 2fr 1fr;
+    gap: 56px;
     align-items: start;
   }
   /* Image gallery — Uniqlo風 大画像2列グリッド */
@@ -1406,10 +1406,12 @@
   .product-gallery .gallery-cell {
     background: var(--bg-soft);
     overflow: hidden;
+    aspect-ratio: 3 / 4;
   }
   .product-gallery .gallery-cell img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
   }
   /* Product info — スクロール追従 */
